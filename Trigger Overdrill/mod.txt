@@ -1,5 +1,5 @@
 {
-	"name": "Overdrill Trigger"
+    "name": "Trigger Overdrill",
     "keybinds": [
 	    {
 	        "keybind_id": "keybind_triggeroverdrill",
