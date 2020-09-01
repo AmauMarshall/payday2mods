@@ -1,0 +1,16 @@
+{
+    "name": "Open All Deposit",
+    "author": "Matrik",
+    "keybinds": [
+	    {
+	        "keybind_id": "keybind_opndeposit",
+	        "name": "Open All Deposit Boxes",
+	        "description": " ",
+	        "script_path": "opndeposit.lua",
+	        "run_in_menu": false,
+	        "run_in_game": true,
+	        "localized": false
+	    }
+	]
+
+}
