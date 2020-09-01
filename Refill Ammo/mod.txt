@@ -1,0 +1,10 @@
+{
+	"name": "Infinite Ammo",
+	"author": "Matrik",
+	"hooks": [
+		{
+			"hook_id" : "lib/units/weapons/newraycastweaponbase",
+			"script_path" : "refill_ammo.lua"
+		}
+	]
+}
