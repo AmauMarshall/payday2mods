@@ -1,0 +1,15 @@
+{
+	"name": "Overdrill Trigger"
+    "keybinds": [
+	    {
+	        "keybind_id": "keybind_triggeroverdrill",
+	        "name": "Triggers Overdrill",
+	        "description": " ",
+	        "script_path": "trigg.lua",
+	        "run_in_menu": false,
+	        "run_in_game": true,
+	        "localized": false
+	    }
+	]
+
+}
