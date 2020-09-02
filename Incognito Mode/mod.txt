@@ -1,0 +1,9 @@
+{
+	"name": "Incognito Mode",
+	"hooks": [
+		{
+			"hook_id": "lib/managers/menumanager",
+			"script_path": "incognito.lua"
+		}
+	]
+}
