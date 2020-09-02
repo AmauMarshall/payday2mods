@@ -1,7 +1,7 @@
 {
 	"name": "Spawn Loot Bags",
 	"author": "Matrik",
-	"description": "Spawn Loot Bags. This mod is intended for host use only, or when playing with friends (make sure the host has Autokick Cheaters turned off). Credits to Harfatus for the SimpleMenu class.",
+	"description": "Spawn Loot Bags. This mod is intended for host use only, or when playing with friends (make sure the host has Autokick Cheaters turned off). Credits to Harfatus for the SimpleMenu class and some functions shamelessly stolen from rogerxiii.",
 	"hooks": [
 		{
 			"hook_id": "lib/managers/playermanager",
