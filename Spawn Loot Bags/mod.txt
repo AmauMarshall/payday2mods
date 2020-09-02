@@ -1,0 +1,26 @@
+{
+	"name": "Spawn Loot Bags",
+	"author": "Matrik",
+	"description": "Spawn Loot Bags. This mod is intended for host use only, or when playing with friends (make sure the host has Autokick Cheaters turned off). Credits to Harfatus for the SimpleMenu class.",
+	"hooks": [
+		{
+			"hook_id": "lib/managers/playermanager",
+			"script_path": "anticheat_disable.lua"
+		},
+		{
+			"hook_id": "lib/managers/menumanager",
+			"script_path": "simplemenu.lua"
+		}
+	],
+	"keybinds" : [
+		{
+			"keybind_id" : "keybind_spawnbagmenu",
+			"name" : "Spawn Bag Menu/Drop",
+			"description" : " "
+			"script_path" : "chooselootmenu.lua",
+			"run_in_menu" : false,
+			"run_in_game" : true,
+			"localized" : false
+		}
+	]
+}
