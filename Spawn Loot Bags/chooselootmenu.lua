@@ -1,5 +1,5 @@
 if not SimpleMenu then 
-	manager.chat:_receive_message(1, "Spawn Bag", "Error: \"SimpleMenu\" class not found", Color.red)
+	manager.chat:_receive_message(1, "Spawn Bag", "Error: \"SimpleMenu\" class not found.", Color.red)
 	return
 end
 
@@ -86,6 +86,7 @@ end
 spawn_or_bind = spawn_or_bind or function(data)
 	if is_bind_menu then
 		chosen_loot = data
+		managers.chat:_receive_message(1, "Spawn Bag", "Binded loot: ".._loots[data]..".", Color.yellow)
 	else
 		spawn_bag(data)
 	end
@@ -203,15 +204,16 @@ else
 		choose_loot_menu()
 		if Input:keyboard():down(toggle_bind:id()) then
 			is_bind_menu = true
-			managers.chat:_receive_message(1, "Spawn Bag", "Bind mod = true", Color.yellow)
+			managers.chat:_receive_message(1, "Spawn Bag", "Bind mod enabled.", Color.yellow)
 		end
-	end
-
-	if is_bind_menu then
+	elseif is_bind_menu then
 		if Input:keyboard():down(toggle_unbind:id())  then
 			is_bind_menu = false
 			chosen_loot = nil
-			managers.chat:_receive_message(1, "Spawn Bag", "Bind mod = false", Color.yellow)
+			managers.chat:_receive_message(1, "Spawn Bag", "Bind mod disabled.", Color.yellow)
+		elseif Input:keyboard():down(toggle_bind:id()) then
+			choose_loot_menu()
+			managers.chat:_receive_message(1, "Spawn Bag", "Changing binded loot.", Color.yellow)
 		else
 			spawn_bag(chosen_loot)
 		end
