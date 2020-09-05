@@ -1,0 +1,15 @@
+{
+	"name": "Equipment Switcher",
+	"author": "Matrik",
+	"keybinds" : [
+		{
+			"keybind_id" : "keybind_eqp_swtchr",
+			"name" : "Open Menu",
+			"description" : " "
+			"script_path" : "eqp_swtchr.lua",
+			"run_in_menu" : false,
+			"run_in_game" : true,
+			"localized" : false
+		}
+	]
+}
