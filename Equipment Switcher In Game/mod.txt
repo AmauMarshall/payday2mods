@@ -1,6 +1,7 @@
 {
 	"name": "Equipment Switcher",
 	"author": "Matrik",
+	"version": "1",
 	"keybinds" : [
 		{
 			"keybind_id" : "keybind_eqp_swtchr",
